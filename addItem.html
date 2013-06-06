@@ -18,7 +18,7 @@
 		<!-- !CSS -->
 		<link rel="stylesheet" href="">
 		<!-- JavaScript -->
-		<script src=""></script>
+		<script type="text/javascript" src=""></script>
 		<!--Title-->
 		<title>Add Equipment Form</title>
 	</head>
@@ -35,18 +35,25 @@
 					<li><label for="islot">Item Slot:</label>
 					<!-- COMBOBOX SELECTION FOR ITEM SLOT -->
 					<select id="islot">
-						<optgroup label="Select One..">
+						<optgroup label="Armor">
 							<option value="belt">Belt</option>
 							<option value="chest">Chest</option>
 							<option value="feet">Feet</option>
 							<option value="gloves">Gloves</option>
 							<option value="helmet">Helmet</option>
 							<option value="legs">Legs</option>
+							<option value="shoulders">Shoulders</option>
+							<option value="back">Back</option>
+						</optgroup>
+						<optgroup label="Weapons">
 							<option value="mainhand">Main Hand</option>
 							<option value="offhand">Off Hand</option>
-							<option value="neck">Neck</option>
-							<option value="shoulders">Shoulders</option>
 							<option value="twohand">Two Handed</option>
+						</optgroup>
+						<optgroup label="Accessory">
+							<option value="neck">Neck</option>
+							<option value="leftring">Left Ring</option>
+							<option value="rightring">Right Ring</option>
 						</optgroup>
 					</select>
 					<!-- RADIO BUTTON SELECTION FOR RARITY -->
@@ -59,7 +66,8 @@
 						</ul>
 					<br />
 					<!-- SLIDER -->
-					<li><label for="lvlslider">Item Level:</label><input type="range" min="1" max="60" name="lvlslider" /></li>
+					<li><label for="lvlslider">Item Level:</label><br />
+					1<input type="range" min="1" max="60" name="lvlslider" />60</li>
 					<!-- DATE SELECTION BOX -->
 					<li><label for="dateadded">Date Added:</label><input type="date" /></li>
 					<br />
@@ -67,7 +75,8 @@
 					<li><input type="checkbox" id="savegear" />&nbsp<label for="savegear">Save to your item list?</label></li>
 					<br />
 					<!-- TEXT AREA -->
-					<li><label for="note">Additional Notes:</label><textarea id="note">Add additional information here.</textarea></li>
+					<li><label for="note">Additional Notes:</label><br />
+					<textarea id="note">Add additional information here.</textarea></li>
 					<li><input type="hidden" value="true" /></li> <!-- HIDDEN INPUT -->
 				</ul>
 			</fieldset>
